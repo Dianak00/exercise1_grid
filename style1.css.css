@@ -1,0 +1,44 @@
+body {
+    font-size: 35px;
+    background-color: darkslategrey;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    width: 1080px;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+  }
+  .grid div {
+    background-color: cadetblue;
+    padding: 10px 20px;
+    border: 2px solid #426e70;
+    color: white;
+    font-size: 28px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #one {
+    grid-area: 1 /1 /3/ 7;
+    opacity: 50%;
+  }
+  #two {
+    grid-area: 2/ 4/ 5/ 11;
+    opacity: 50%;
+  }
+  #three {
+    grid-area: 1 / 7 /  2 /10;
+  }
+  #five {
+    grid-area: 3 /1 / 4 / 4;
+  }
+  #six {
+    grid-area: 4/ 1 /5 /4;
+  }
+  #seven {
+    grid-area: 5 /1 /6/4;
+  }
